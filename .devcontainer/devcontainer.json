@@ -7,6 +7,10 @@
     }
   },
   "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "version": "latest",
       "enableNonRootDocker": "true",
@@ -29,6 +33,6 @@
     }
   },
   "runArgs": ["--name", "${localWorkspaceFolderBasename}"],
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code @google/gemini-cli && gh extension install github/gh-copilot || true",
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code @google/gemini-cli && (gh extension install github/gh-copilot || true)",
   "remoteUser": "vscode"
 }
