@@ -21,12 +21,13 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "GitHub.codespaces",
+        "ms-vscode-remote.remote-containers",
+        "github.remotehub",
         "GitHub.copilot",
         "GitHub.copilot-chat",
         "anthropic.claude-code",
-        "google.geminicodeassist",
-        "eamodio.gitlens",
-        "EditorConfig.EditorConfig"
+        "google.geminicodeassist"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh"

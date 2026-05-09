@@ -3,8 +3,6 @@
     "GitHub.copilot",
     "GitHub.copilot-chat",
     "anthropic.claude-code",
-    "google.geminicodeassist",
-    "eamodio.gitlens",
-    "EditorConfig.EditorConfig"
+    "google.geminicodeassist"
   ]
 }

@@ -12,7 +12,27 @@ This template provides a zero-configuration starting point for any new project. 
 
 ---
 
+## What's Included
+
+- **Dev Container**: Ubuntu-based container with zsh, Node.js LTS, Docker-in-Docker
+- **AI Assistants**: Claude Code, GitHub Copilot, Gemini CLI, opencode — all pre-installed
+- **Agent Instructions**: Structured guidance for AI tools via `CLAUDE.md` → `AGENTS.md` → `.github/copilot-instructions.md`
+- **VS Code Config**: Recommended extensions (Copilot, Claude, Gemini, GitLens, EditorConfig)
+- **Git Configuration**: `.gitignore` for env files, OS artifacts, and editor files
+
+---
+
 ## Getting Started
+
+### Creating a new repository from this template
+
+Click **"Use this template"** at the top of the [GitHub repository page](https://github.com/mr-pedro-damasio/zero-config-devcontainer), or use the GitHub CLI:
+
+```bash
+gh repo create my-project --template mr-pedro-damasio/zero-config-devcontainer
+```
+
+Then follow one of the options below to open your new project.
 
 ### Option 1 — GitHub Codespaces (recommended)
 
@@ -74,10 +94,25 @@ The following AI coding assistants are pre-installed and available in this envir
 
 ## Development
 
-<!-- Add project-specific development instructions here once the stack is defined. -->
+This template is intentionally stack-agnostic. After creating a project from it:
+
+1. Choose your language/runtime and add it to `.devcontainer/Dockerfile` and/or devcontainer features in `.devcontainer/devcontainer.json`.
+2. Install project dependencies (e.g., `npm install`, `pip install`, `cargo build`).
+3. Copy `.env.example` to `.env` and configure environment variables.
+4. Update `README.md` with project-specific instructions.
+5. Update `AGENTS.md` with project-specific conventions.
 
 ---
 
 ## Contributing
 
-<!-- Add contribution guidelines here. -->
+Contributions to this template are welcome! Please open an issue or pull request on [GitHub](https://github.com/mr-pedro-damasio/zero-config-devcontainer).
+
+When contributing:
+- Keep the template language-agnostic (do not add stack-specific tooling to the base config).
+- Test changes in both GitHub Codespaces and local dev containers.
+- Update documentation (README, AGENTS.md) to reflect any changes.
+
+## License
+
+[MIT](LICENSE) © 2026 mr-pedro-damasio
