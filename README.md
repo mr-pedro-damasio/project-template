@@ -1,6 +1,6 @@
-# Project Name
+# Project Template
 
-> Short description of what this project does.
+> A language-agnostic GitHub Template Repository with a fully configured dev container, GitHub Codespaces support, Docker-in-Docker, and AI coding assistants (Claude Code, GitHub Copilot, Gemini) ready out of the box.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/OWNER/REPO)
 
@@ -8,7 +8,7 @@
 
 ## Overview
 
-<!-- Describe the project: purpose, context, and any relevant background. -->
+This template provides a zero-configuration starting point for any new project. The development environment runs identically in GitHub Codespaces and in a local VS Code dev container. Language runtimes, frameworks, and project-specific tooling are intentionally left out — they are added after the project is created from this template.
 
 ---
 
