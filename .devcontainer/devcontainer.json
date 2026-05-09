@@ -1,0 +1,34 @@
+{
+  "name": "${localWorkspaceFolderBasename}",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "PROJECT_NAME": "${localWorkspaceFolderBasename}"
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "enableNonRootDocker": "true",
+      "moby": "true"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "anthropic.claude-code",
+        "google.geminicodeassist",
+        "eamodio.gitlens",
+        "EditorConfig.EditorConfig"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      }
+    }
+  },
+  "runArgs": ["--name", "${localWorkspaceFolderBasename}"],
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code @google/gemini-cli && gh extension install github/gh-copilot || true",
+  "remoteUser": "codespace"
+}
