@@ -5,5 +5,11 @@
     "frontend-design@claude-plugins-official": true,
     "github@claude-plugins-official": true,
     "playwright@claude-plugins-official": true
+  },
+  "env": {
+    "_ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
+    "_ANTHROPIC_AUTH_TOKEN": "",
+    "_ANTHROPIC_API_KEY": "",
+    "_ANTHROPIC_MODEL": "deepseek/deepseek-v4-pro" 
   }
 }
