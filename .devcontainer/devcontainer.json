@@ -35,9 +35,6 @@
     }
   },
   "runArgs": ["--name", "${localWorkspaceFolderBasename}"],
-  "remoteEnv": {
-    "ANTHROPIC_AUTH_TOKEN": "${localEnv:ANTHROPIC_AUTH_TOKEN}"
-  },
   "postCreateCommand": "npm install -g @anthropic-ai/claude-code @google/gemini-cli opencode-ai && (gh extension install github/gh-copilot || true)",
   "remoteUser": "vscode"
 }
