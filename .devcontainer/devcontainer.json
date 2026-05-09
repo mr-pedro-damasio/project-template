@@ -34,6 +34,6 @@
     }
   },
   "runArgs": ["--name", "${localWorkspaceFolderBasename}"],
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code @google/gemini-cli && (gh extension install github/gh-copilot || true)",
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code @google/gemini-cli opencode-ai && (gh extension install github/gh-copilot || true)",
   "remoteUser": "vscode"
 }
