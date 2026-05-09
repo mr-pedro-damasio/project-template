@@ -1,8 +1,8 @@
-# Project Template
+# Zero Config Devcontainer
 
 > A language-agnostic GitHub Template Repository with a fully configured dev container, GitHub Codespaces support, Docker-in-Docker, and AI coding assistants (Claude Code, GitHub Copilot, Gemini) ready out of the box.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/OWNER/REPO)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mr-pedro-damasio/zero-config-devcontainer)
 
 ---
 
@@ -52,10 +52,10 @@ This project uses Docker for production builds. The dev container has Docker-in-
 
 ```bash
 # Build the production image
-docker build -t project-name .
+docker build -t zero-config-devcontainer .
 
 # Run the production container
-docker run --env-file .env project-name
+docker run --env-file .env zero-config-devcontainer
 ```
 
 ---
