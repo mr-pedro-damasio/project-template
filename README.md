@@ -17,7 +17,7 @@ This template provides a zero-configuration starting point for any new project. 
 - **Dev Container**: Ubuntu-based container with zsh, Node.js LTS, Docker-in-Docker
 - **AI Assistants**: Claude Code, GitHub Copilot, Gemini CLI, opencode — all pre-installed
 - **Agent Instructions**: Structured guidance for AI tools via `CLAUDE.md` → `AGENTS.md` → `.github/copilot-instructions.md`
-- **VS Code Config**: Recommended extensions (Copilot, Claude, Gemini)
+- **VS Code Config**: Recommended extensions — GitHub Copilot, GitHub Copilot Chat, Claude Code, Gemini Code Assist, GitHub Codespaces, Dev Containers, RemoteHub
 - **Git Configuration**: `.gitignore` for env files, OS artifacts, and editor files
 
 ---

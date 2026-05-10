@@ -28,10 +28,7 @@
         "GitHub.copilot-chat",
         "anthropic.claude-code",
         "google.geminicodeassist"
-      ],
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh"
-      }
+      ]
     }
   },
   "runArgs": ["--name", "${localWorkspaceFolderBasename}"],
