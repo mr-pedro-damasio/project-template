@@ -1,6 +1,6 @@
 # Zero Config Devcontainer
 
-> A language-agnostic GitHub Template Repository with a fully configured dev container, GitHub Codespaces support, Docker-in-Docker, and AI coding assistants (Claude Code, GitHub Copilot, Gemini) ready out of the box.
+> A language-agnostic GitHub Template Repository with a fully configured dev container, GitHub Codespaces support, and AI coding assistants (Claude Code, GitHub Copilot, Gemini) ready out of the box.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mr-pedro-damasio/zero-config-devcontainer)
 
@@ -14,8 +14,8 @@ This template provides a zero-configuration starting point for any new project. 
 
 ## What's Included
 
-- **Dev Container**: Ubuntu-based container with zsh, Node.js LTS, Docker-in-Docker
-- **AI Assistants**: Claude Code, GitHub Copilot, Gemini CLI, opencode — all pre-installed
+- **Dev Container**: Ubuntu-based container with Node.js LTS and GitHub CLI
+- **AI Assistants**: Claude Code, GitHub Copilot (`gh copilot`), Gemini CLI, opencode — all pre-installed
 - **Agent Instructions**: Structured guidance for AI tools via `CLAUDE.md` → `AGENTS.md` → `.github/copilot-instructions.md`
 - **VS Code Config**: Recommended extensions — GitHub Copilot, GitHub Copilot Chat, Claude Code, Gemini Code Assist, GitHub Codespaces, Dev Containers, RemoteHub
 - **Git Configuration**: `.gitignore` for env files, OS artifacts, and editor files
@@ -66,20 +66,6 @@ cp .env.example .env
 
 ---
 
-## Docker
-
-This project uses Docker for production builds. The dev container has Docker-in-Docker enabled, so you can build and run production images directly from your development environment.
-
-```bash
-# Build the production image
-docker build -t zero-config-devcontainer .
-
-# Run the production container
-docker run --env-file .env zero-config-devcontainer
-```
-
----
-
 ## AI Tools
 
 The following AI coding assistants are pre-installed and available in this environment:
@@ -97,7 +83,7 @@ The following AI coding assistants are pre-installed and available in this envir
 
 This template is intentionally stack-agnostic. After creating a project from it:
 
-1. Choose your language/runtime and add it to `.devcontainer/Dockerfile` and/or devcontainer features in `.devcontainer/devcontainer.json`.
+1. Choose your language/runtime and add it as a devcontainer feature in `.devcontainer/devcontainer.json`, or create a custom `.devcontainer/Dockerfile` and reference it from `devcontainer.json`.
 2. Install project dependencies (e.g., `npm install`, `pip install`, `cargo build`).
 3. Copy `.env.example` to `.env` and configure environment variables.
 4. Update `README.md` with project-specific instructions.
