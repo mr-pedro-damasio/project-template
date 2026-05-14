@@ -5,5 +5,3 @@ npm install -g \
   @anthropic-ai/claude-code \
   @google/gemini-cli \
   opencode-ai
-
-gh extension install github/gh-copilot
