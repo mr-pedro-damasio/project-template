@@ -15,7 +15,7 @@ This template provides a zero-configuration starting point for any new project. 
 ## What's Included
 
 - **Dev Container**: Ubuntu-based container with Node.js LTS and GitHub CLI
-- **AI Assistants**: Claude Code, GitHub Copilot (`gh copilot`), Gemini CLI, opencode — all pre-installed
+- **AI Assistants**: Claude Code, GitHub Copilot, Gemini CLI, opencode — all pre-installed
 - **Agent Instructions**: Structured guidance for AI tools via `CLAUDE.md` → `AGENTS.md` → `.github/copilot-instructions.md`
 - **VS Code Config**: Recommended extensions — GitHub Copilot, GitHub Copilot Chat, Claude Code, Gemini Code Assist, GitHub Codespaces, Dev Containers, RemoteHub
 - **Git Configuration**: `.gitignore` for env files, OS artifacts, and editor files
@@ -73,7 +73,7 @@ The following AI coding assistants are pre-installed and available in this envir
 | Tool | CLI | VS Code Extension |
 |------|-----|-------------------|
 | [Claude Code](https://claude.ai/code) | `claude` | Anthropic Claude Code |
-| [GitHub Copilot](https://github.com/features/copilot) | `gh copilot` | GitHub Copilot |
+| [GitHub Copilot](https://github.com/features/copilot) | — | GitHub Copilot |
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `gemini` | Gemini Code Assist |
 | [opencode](https://opencode.ai) | `opencode` | — |
 
